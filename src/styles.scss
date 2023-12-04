@@ -1,0 +1,31 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+
+  .cv-container{
+    display: flex;
+  }
+
+
+  h5 {
+    border: 1px solid white;
+  }
+
+  .technology-card {
+    font-size: 14px;
+    background-color: #343a40;
+    color: white;
+  }
+
+  hr {
+    background-color: rgb(255, 255, 255);
+  }
