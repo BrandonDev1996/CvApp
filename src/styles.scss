@@ -3,29 +3,27 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #C0C0C0;
+
   }
 
-  header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-  }
 
-  .cv-container{
+  section {
+    background-image: url("../src/assets/presentacion.jpeg");
+    height: 100vh;
+    width: 100%;
     display: flex;
-  }
+    flex-direction: column;
+    align-items: center;
+    padding: 1%; 
+    overflow-x: unset;
+    div{
+      padding: 10%;
+      width: 50vw;
+    }
+}
 
+h1 {
+  font-size: 60px;
+}
 
-  h5 {
-    border: 1px solid white;
-  }
-
-  .technology-card {
-    font-size: 14px;
-    background-color: #343a40;
-    color: white;
-  }
-
-  hr {
-    background-color: rgb(255, 255, 255);
-  }

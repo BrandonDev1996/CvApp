@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { person } from './service/info-person';
+import { PersonInfo, person } from './service/info-person';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,6 @@ import { person } from './service/info-person';
 })
 export class AppComponent {
 
-  title = 'Software Developer';
-  person = person;
-
+  person:PersonInfo = person
 }
+

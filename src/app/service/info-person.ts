@@ -12,14 +12,14 @@ export class PersonInfo {
     }
 }
 
-interface Technologies {
+export interface Technologies {
     backend: string[],
     frontend: string[],
     versionControl: string[],
     gestionDeProyecto: string[]
 }
 
-interface ContactInformation {
+export interface ContactInformation {
     location: string,
     linkedinProfile: string,
     gitProfile: string,
@@ -31,14 +31,14 @@ interface EducationalInfo {
     tiempo: string
 }
 
-const technologies: Technologies = {
+ export const technologies: Technologies = {
     backend: ['Java', 'Spring boot', 'Spring data JPA', 'Spring security', 'Swagger', 'JWT', 'Junit 5', 'Mockito', 'Docker', 'Database Management in Low-Resource Environments'],
     frontend: ['HTML - JSON - XML - YAML', 'CSS -> SCSS --> Bootstrap --> Angular Material', 'JavaScript --> Typscript --> Angular v12+'],
     versionControl: ['Git --> Commitlint y Husky'],
     gestionDeProyecto: ['Jira', 'Confluence']
 };
 
-const contactInformation: ContactInformation = {
+export const contactInformation: ContactInformation = {
     location: 'Buenos Aires, Argentina',
     linkedinProfile: 'https://www.linkedin.com/in/brandon-maciel/',
     gitProfile: 'https://github.com/BrandonDev1996',

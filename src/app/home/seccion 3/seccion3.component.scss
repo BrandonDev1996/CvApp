@@ -1,0 +1,10 @@
+.container-technologies{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    padding: 1%;
+
+    div{
+        margin-left: 5px;
+    }
+}
