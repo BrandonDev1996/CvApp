@@ -1,7 +1,7 @@
 <section>
     <p [ngClass]="{'visitas': true, 'encendido': mostrarLuz, 'apagado': !mostrarLuz}">Visitas: 
         <span *ngIf="visitas">{{ visitas }}</span>
-        <span class="movimiento" *ngIf="!visitas">...</span>
+        <span *ngIf="!visitas">...</span>
     </p>
     <h2>Software Developer</h2>
     <div>
