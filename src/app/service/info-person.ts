@@ -32,7 +32,7 @@ interface EducationalInfo {
 }
 
  export const technologies: Technologies = {
-    backend: ['Java', 'Spring boot', 'Spring data JPA', 'Spring security', 'Swagger', 'JWT', 'Junit 5', 'Mockito', 'Docker', 'Database Management in Low-Resource Environments'],
+    backend: ['Java', 'Spring boot', 'Spring data JPA', 'Spring security', 'Swagger', 'JWT', 'Junit 5', 'Mockito', 'Docker', 'Database Management in Low-Resource Environments', 'Patrones de diseño'],
     frontend: ['HTML - JSON - XML - YAML', 'CSS -> SCSS --> Bootstrap --> Angular Material', 'JavaScript --> Typscript --> Angular v12+'],
     versionControl: ['Git --> Commitlint y Husky'],
     gestionDeProyecto: ['Jira', 'Confluence']

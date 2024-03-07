@@ -1,4 +1,9 @@
 <section>
+    <p [ngClass]="{'visitas': true, 'encendido': mostrarLuz, 'apagado': !mostrarLuz}">Visitas: 
+        <span *ngIf="visitas">{{ visitas }}</span>
+        <span class="movimiento" *ngIf="!visitas">...</span>
+    </p>
+    <h2>Software Developer</h2>
     <div>
         <h1>Hi!!</h1>
         <h1>I'm {{nombre}}</h1>
