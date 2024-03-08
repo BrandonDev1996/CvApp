@@ -8,7 +8,7 @@ import { UsuarioRequestDTO } from '../models/usuarioRequestDTO';
 })
 export class VisitantesService {
 
-  url = "https://cvappbackend.onrender.com/"
+  url = "https://cvappbackend.onrender.com"
   constructor(private http: HttpClient) { }
 
   registrarEntrada(): Observable<number> {
