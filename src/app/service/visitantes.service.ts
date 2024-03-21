@@ -11,10 +11,8 @@ export class VisitantesService {
   url = "https://cvappbackend.onrender.com"
   constructor(private http: HttpClient) { }
 
-  registrarEntrada(): Observable<number> {
-    const usuarioRequestDTO: UsuarioRequestDTO = new UsuarioRequestDTO();
-    usuarioRequestDTO.ip = 'abc';
-    return this.http.post<number>(this.url + '/usuario/post', usuarioRequestDTO)
+  registrarEntrada(usuario: UsuarioRequestDTO): Observable<number> {
+    return this.http.post<number>(this.url + '/usuario/post', usuario)
   }
 
 }

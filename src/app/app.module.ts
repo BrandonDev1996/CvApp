@@ -8,6 +8,7 @@ import { SobreMiComponent } from './home/seccion 2/sobre-mi.component';
 import { PresentacionComponent } from './home/seccion 1/presentacion.component';
 import { Seccion3Component } from './home/seccion 3/seccion3.component';
 import { FooterComponent } from './home/footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FooterComponent } from './home/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

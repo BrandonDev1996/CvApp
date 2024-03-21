@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { UsuarioRequestDTO } from 'src/app/models/usuarioRequestDTO';
 import { VisitantesService } from 'src/app/service/visitantes.service';
 
 @Component({
@@ -12,14 +13,20 @@ export class PresentacionComponent implements OnInit {
   visitas: number = 0;
   mostrarLuz: boolean = false; 
   loading: boolean = true;
+  inputValue:string = ''
   constructor(private visitantesSrv: VisitantesService) { }
 
   ngOnInit() {
-    this.visitantesSrv.registrarEntrada().subscribe(visitasCount => {
-      this.visitas = visitasCount;
-      this.mostrarLuz = true;
-      this.loading = false;
-    })
+     }
 
-  }
+    saveInput(){
+      const usuarioRequestDTO: UsuarioRequestDTO = new UsuarioRequestDTO();
+      usuarioRequestDTO.ip = this.inputValue;
+      this.visitantesSrv.registrarEntrada(usuarioRequestDTO).subscribe(visitasCount => {
+        console.log(visitasCount)
+        this.visitas = visitasCount;
+        this.mostrarLuz = true;
+        this.loading = false;
+      })
+    }
 }
