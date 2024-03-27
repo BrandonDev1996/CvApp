@@ -1,28 +1,36 @@
-div{
-    width: 80vw;
-    padding: 15%;
-    h1{
-        font-size: 60px;
-    }
+div {
+  width: 80vw;
+  padding: 15%;
+
+  h1 {
+    font-size: 60px;
+  }
 }
 
-.visitas {
-    font-size: 16px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: inline-block;
-    transition: box-shadow 0.3s ease;
-  
-    &.encendido {
-      box-shadow: 0 0 10px yellow;
-    }
-  
-    &.apagado {
-      box-shadow: none;
-    }
-  }
 
-  
-  
-  
+.loading {
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+
+section:hover .loading {
+  transition-duration: 500ms;
+  opacity: 1;
+}
+
+
+.loading:first-child {
+  transition-delay: 0s;
+}
+
+.loading:nth-child(2) {
+  transition-delay: 300ms;
+
+}
+
+.loading:nth-child(3) {
+  transition-delay: 600ms;
+}
+
+

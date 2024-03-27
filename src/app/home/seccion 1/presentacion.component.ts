@@ -11,22 +11,21 @@ export class PresentacionComponent implements OnInit {
 
   @Input() nombre: string = ''
   visitas: number = 0;
-  mostrarLuz: boolean = false; 
+  mostrarLuz: boolean = false;
   loading: boolean = true;
-  inputValue:string = ''
+  inputValue: string = ''
   constructor(private visitantesSrv: VisitantesService) { }
 
   ngOnInit() {
-     }
+  }
 
-    saveInput(){
-      const usuarioRequestDTO: UsuarioRequestDTO = new UsuarioRequestDTO();
-      usuarioRequestDTO.ip = this.inputValue;
-      this.visitantesSrv.registrarEntrada(usuarioRequestDTO).subscribe(visitasCount => {
-        console.log(visitasCount)
-        this.visitas = visitasCount;
-        this.mostrarLuz = true;
-        this.loading = false;
-      })
-    }
+  saveInput() {
+    const usuarioRequestDTO: UsuarioRequestDTO = new UsuarioRequestDTO();
+    usuarioRequestDTO.ip = this.inputValue;
+    this.visitantesSrv.registrarEntrada(usuarioRequestDTO).subscribe(visitasCount => {
+      this.visitas = visitasCount;
+      this.mostrarLuz = true;
+      this.loading = false;
+    })
+  }
 }
