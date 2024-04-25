@@ -33,9 +33,9 @@ interface EducationalInfo {
 
  export const technologies: Technologies = {
     backend: ['Java', 'Spring boot', 'Spring data JPA', 'Spring security', 'Swagger', 'JWT', 'Junit 5', 'Mockito', 'Docker', 'Database Management in Low-Resource Environments', 'Patrones de diseño'],
-    frontend: ['HTML - JSON - XML - YAML', 'CSS -> SCSS --> Bootstrap --> Angular Material', 'JavaScript --> Typscript --> Angular v12+'],
-    versionControl: ['Git --> Commitlint y Husky'],
-    gestionDeProyecto: ['Jira', 'Confluence']
+    frontend: ['HTML, JSON, XML, YAML', 'CSS, SCSS, Bootstrap, Angular Material', 'JavaScript, Typscript', 'Angular v12+, Angular v17', 'Test con Jasmin y Karma'],
+    versionControl: ['Git, Commitlint y Husky, CL/CI'],
+    gestionDeProyecto: ['Jira', 'Confluence', 'Postman', 'Docker', 'DBeaver', 'Figma']
 };
 
 export const contactInformation: ContactInformation = {

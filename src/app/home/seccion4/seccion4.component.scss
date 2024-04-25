@@ -1,39 +1,15 @@
-.div1 {
-    width: 100%;
+.div2{
+    display: flex;
 }
-
-.div2 {
-    width: 100%;
-    background-image: url("https://assets.isu.pub/document-structure/210405202957-4f9bb1b9ccc0600854b2698babdc5f08/v1/d89218426a932aa8b1621d9ac85e5208.jpg");
-}
-
 .div3 {
-    height: 350px;
-    display: grid;
-    place-content: center;
-
-    img {
-        height: 50px;
-        width: 50px;
-        border-radius: 100%;
-        animation-name: mover;
-        animation-iteration-count: 1;
-        animation-duration: 5s;
-        animation-direction: normal;
-        animation-fill-mode: both;
-        
-    }
-    
-}
-
-img:hover{
-    animation-play-state: paused;
-}
-
-@keyframes mover {
-
-    to {
-        transform: translateY(150px);
+    border: 1px solid gray;
+    margin-left: 15px;
+    text-align: center;
+    a {
+        font-size: 20px;
 
     }
+}
+.div3:hover{
+    background-color: blue;
 }
