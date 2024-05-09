@@ -2,4 +2,17 @@
 <app-sobre-mi></app-sobre-mi>
 <app-seccion3 [tecnologies]="person.technologies"></app-seccion3>
 <app-seccion4></app-seccion4>
+
+<div class="login-container">
+    <label for="input">Ingrese Contraseña</label>
+    <input class="form-control" type="text" #input>
+    <div *ngIf="validCode()" class="alert alert-danger" role="alert">
+        Invalid code, please request assistance from<a target="_blank" href="https://www.linkedin.com/in/brandon-maciel/" class="alert-link">Brandon.</a>
+    </div>
+    <button *ngIf="!puedeVerInfo" (click)="login(input.value)" class="btn btn-primary">Ver Datos de contacto</button>
+</div>
+
+<ng-container *ngIf="puedeVerInfo">
+    <app-seccion [puedeVerPersonalData]="puedeVerInfo"> </app-seccion>
+</ng-container>
 <app-footer></app-footer>

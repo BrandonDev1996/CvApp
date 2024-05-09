@@ -1,0 +1,18 @@
+.div2 {
+    display: flex;
+}
+
+.div3 {
+    border: 1px solid gray;
+    margin-left: 15px;
+    text-align: center;
+
+    a {
+        font-size: 20px;
+
+    }
+}
+
+.div3:hover {
+    border: 1px #f4f4f4 solid;
+}
