@@ -9,7 +9,7 @@ import { PersonInfo, person } from './service/info-person';
 export class AppComponent implements OnInit {
 
   person: PersonInfo = person
-  puedeVerInfo: boolean = false
+  puedeVerInfo: boolean = true
   pass: string = ':)'
 
   ngOnInit(): void {
